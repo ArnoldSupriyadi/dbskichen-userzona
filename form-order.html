@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Elements | DBS Kitchen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body data-sidebar="dark" data-layout-mode="light">
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+      <header id="page-topbar">
+        <div class="navbar-header">
+          <div class="d-flex">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+              <a href="index.html" class="logo logo-dark">
+                <span class="logo-sm">
+                  <img src="assets/images/logo.svg" alt="" height="22" />
+                </span>
+                <span class="logo-lg">
+                  <img src="assets/images/logo-dark.png" alt="" height="17" />
+                </span>
+              </a>
+
+              <a href="index.html" class="logo logo-light">
+                <span class="logo-sm">
+                  <img src="assets/images/logo-light.svg" alt="" height="22" />
+                </span>
+                <span class="logo-lg">
+                  <img src="assets/images/dbs-logo.png" alt="" height="60" />
+                </span>
+              </a>
+            </div>
+
+            <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+              <i class="fa fa-fw fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="d-flex">
+            <div class="dropdown d-inline-block d-lg-none ms-2">
+              <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="mdi mdi-magnify"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                <form class="p-3">
+                  <div class="form-group m-0">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username" />
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="dropdown d-inline-block">
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
+                <div class="p-3">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <h6 class="m-0" key="t-notifications">Notifications</h6>
+                    </div>
+                    <div class="col-auto">
+                      <a href="#!" class="small" key="t-view-all"> View All</a>
+                    </div>
+                  </div>
+                </div>
+                <div data-simplebar style="max-height: 230px">
+                  <a href="javascript: void(0);" class="text-reset notification-item">
+                    <div class="d-flex">
+                      <div class="avatar-xs me-3">
+                        <span class="avatar-title bg-primary rounded-circle font-size-16">
+                          <i class="bx bx-cart"></i>
+                        </span>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="mb-1" key="t-your-order">Your order is placed</h6>
+                        <div class="font-size-12 text-muted">
+                          <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
+                          <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript: void(0);" class="text-reset notification-item">
+                    <div class="d-flex">
+                      <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic" />
+                      <div class="flex-grow-1">
+                        <h6 class="mb-1">James Lemire</h6>
+                        <div class="font-size-12 text-muted">
+                          <p class="mb-1" key="t-simplified">It will seem like simplified English.</p>
+                          <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript: void(0);" class="text-reset notification-item">
+                    <div class="d-flex">
+                      <div class="avatar-xs me-3">
+                        <span class="avatar-title bg-success rounded-circle font-size-16">
+                          <i class="bx bx-badge-check"></i>
+                        </span>
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6 class="mb-1" key="t-shipped">Your item is shipped</h6>
+                        <div class="font-size-12 text-muted">
+                          <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
+                          <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="javascript: void(0);" class="text-reset notification-item">
+                    <div class="d-flex">
+                      <img src="assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic" />
+                      <div class="flex-grow-1">
+                        <h6 class="mb-1">Salena Layfield</h6>
+                        <div class="font-size-12 text-muted">
+                          <p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of mine occidental.</p>
+                          <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="p-2 border-top d-grid">
+                  <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)"> <i class="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View More..</span> </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown d-inline-block">
+              <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar" />
+                <span class="d-none d-xl-inline-block ms-1" key="t-henry">User Zona A</span>
+                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-end">
+                <!-- item-->
+                <!-- <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">Profile</span></a>
+                <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle me-1"></i> <span key="t-my-wallet">My Wallet</span></a>
+                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end">11</span><i class="bx bx-wrench font-size-16 align-middle me-1"></i> <span key="t-settings">Settings</span></a>
+                <a class="dropdown-item" href="#"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span key="t-lock-screen">Lock screen</span></a>
+                <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item text-danger" href="index.html"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
+              </div>
+            </div>
+
+            <!-- <div class="dropdown d-inline-block">
+              <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                <i class="bx bx-cog bx-spin"></i>
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </header>
+
+      <!-- ========== Left Sidebar Start ========== -->
+      <div class="vertical-menu">
+        <div data-simplebar class="h-100">
+          <!--- Sidemenu -->
+          <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+              <li class="menu-title" key="t-menu">Menu</li>
+
+              <li>
+                <a href="form-order.html" class="waves-effect">
+                  <i class="bx bx-note"></i>
+                  <span key="t-pengiriman">Form Pemesanan / User</span>
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+          <!-- Sidebar -->
+        </div>
+      </div>
+      <!-- Left Sidebar End -->
+
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+        <div class="page-content">
+          <div class="container-fluid">
+            <!-- start page title -->
+            <div class="row">
+              <div class="col-12">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                  <h4 class="mb-sm-0 font-size-18">Form Pemesanan</h4>
+
+                  <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
+                      <li class="breadcrumb-item active">Form Pemesanan</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end page title -->
+
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                     <div class="mb-1 row">
+                      <label for="example-text-input" class="col-md-2 col-form-label">No Order</label>
+                      <div class="col-md-10">
+                         <div class="font-size-12 text-muted">
+                          <p class="mb-1" key="t-grammer">#PO2540</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="example-text-input" class="col-md-2 col-form-label">Name PIC</label>
+                      <div class="col-md-10">
+                       <div class="font-size-12 text-muted">
+                          <p class="mb-1" key="t-grammer">Muhammad Fajar</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="example-date-input" class="col-md-2 col-form-label">Order Date</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="date" value="2019-08-19" id="example-date-input" />
+                      </div>
+                    </div>
+                    <!-- <div class="mb-3 row">
+                      <label for="example-date-input" class="col-md-2 col-form-label">Order Deliver</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="date" value="2019-08-19" id="example-date-input" />
+                      </div>
+                    </div> -->
+
+                    <!-- <div class="mb-3 row">
+                      <label for="example-search-input" class="col-md-2 col-form-label">Jam Pemesanan</label>
+                      <div class="col-md-1 mt-1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="formRadios" id="formRadios2" />
+                          <label class="form-check-label" for="formRadios2"> Pagi </label>
+                        </div>
+                      </div>
+                      <div class="col-md-1 mt-1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked />
+                          <label class="form-check-label" for="formRadios1"> Siang </label>
+                        </div>
+                      </div>
+                      <div class="col-md-1 mt-1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked />
+                          <label class="form-check-label" for="formRadios1"> Malam </label>
+                        </div>
+                      </div>
+                      <div class="col-md-1 mt-1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked />
+                          <label class="form-check-label" for="formRadios1"> Sapper </label>
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="example-search-input" class="col-md-2 col-form-label"></label>
+                        <div class="col-xl-3 col-sm-6">
+                          <div class="card text-center">
+                            <div class="card-body" style="background-color: #f7f7f7;">
+                              <p class="text-muted">
+                                <ul>
+                                  <li>Nasi</li>
+                                  <li>Ayam Goreng</li>
+                                  <li>Sayur Asem</li>
+                                  <li>Tahu Tempe</li>
+                                  <li>Sambel & Krupuk</li>
+                                </ul>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="col-xl-3 col-sm-6">
+                          <div class="card text-center">
+                            <div class="card-body" style="background-color: #f7f7f7;">
+                              <p class="text-muted">
+                                <ul>
+                                  <li>Nasi</li>
+                                  <li>Ayam Bakar</li>
+                                  <li>Sayur Nangka</li>
+                                  <li>Telur Balado</li>
+                                  <li>Sambel & Krupuk</li>
+                                </ul>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                          <div class="card text-center">
+                            <div class="card-body" style="background-color: #f7f7f7;">
+                              <p class="text-muted">
+                                <ul>
+                                  <li>Nasi Goreng</li>
+                                  <li>Krupuk</li>
+                                  <li>Buah - buahan</li>
+                                  <li>Puding</li>
+                                  <li>Sambel</li>
+                                </ul>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+
+                    <div class="mb-3 row">
+                       <label for="example-date-input" class="col-md-2 col-form-label">Time</label>
+                     <div class="col-md-10">
+                       <div class="chat-leftsidebar-nav">
+                          <ul class="nav nav-pills nav-justified">
+                              <li class="nav-item">
+                                  <a href="#pagi" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+                                        <div class="form-check">
+                                        <label class="form-check-label" for="formRadios2"> Pagi </label>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="#siang" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                                      <i class="bx bx-group font-size-20 d-sm-none"></i>
+                                      <span class="d-none d-sm-block">siang</span>
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="#malam" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                                      <i class="bx bx-book-content font-size-20 d-sm-none"></i>
+                                      <span class="d-none d-sm-block">malam</span>
+                                  </a>
+                              </li>
+                                <li class="nav-item">
+                                  <a href="#sapper" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                                      <i class="bx bx-book-content font-size-20 d-sm-none"></i>
+                                      <span class="d-none d-sm-block">sapper</span>
+                                  </a>
+                              </li>
+                          </ul>
+                          <div class="tab-content py-4">
+                              <div class="tab-pane show active" id="pagi">
+                                    <div class="col-xl-3 col-sm-6">
+                                      <div class="card text-center">
+                                        <div class="card-body" style="background-color: #f7f7f7;">
+                                          <p class="text-muted">
+                                            <ul>
+                                              <li>Nasi</li>
+                                              <li>Ayam Goreng</li>
+                                              <li>Sayur Asem</li>
+                                              <li>Tahu Tempe</li>
+                                              <li>Sambel & Krupuk</li>
+                                            </ul>
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </div>
+
+                              <div class="tab-pane" id="siang">
+                                  <div>
+                                          <div class="col-xl-3 col-sm-6 offset-md-3 offset-xl-3">
+            <div class="card text-center">
+              <div class="card-body" style="background-color: #f7f7f7;">
+                <p class="text-muted">
+                  <ul>
+                    <li>Nasi</li>
+                    <li>Ayam Bakar</li>
+                    <li>Sayur Nangka</li>
+                    <li>Telur Balado</li>
+                    <li>Sambel & Krupuk</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+                                          </div>
+                                  </div>
+                              </div>
+
+                              <div class="tab-pane" id="malam">
+                                  <div class="col-xl-3 col-sm-6 offset-md-4 offset-xl-4 offset-md-6 offset-xl-6">
+                                        <div class="card text-center">
+                                          <div class="card-body" style="background-color: #f7f7f7;">
+                                            <p class="text-muted">
+                                              <ul>
+                                                <li>Nasi Goreng</li>
+                                                <li>Krupuk</li>
+                                                <li>Buah - buahan</li>
+                                                <li>Puding</li>
+                                                <li>Sambel</li>
+                                              </ul>
+                                            </p>
+                                          </div>
+                                        </div>
+                                    </div>
+                              </div>
+
+                              <div class="tab-pane" id="sapper">
+                                  <div class="col-xl-3 col-sm-6 offset-md-9 offset-xl-9">
+                                        <div class="card text-center">
+                                          <div class="card-body" style="background-color: #f7f7f7;">
+                                            <p class="text-muted">
+                                              <ul>
+                                                <li>Nasi Putih</li>
+                                                <li>Ayam pop</li>
+                                                <li>Tahu & Tempe</li>
+                                                <li>Perkedel</li>
+                                                <li>Lalapan</li>
+                                              </ul>
+                                            </p>
+                                          </div>
+                                        </div>
+                                    </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+                     </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                      <label for="example-tel-input" class="col-md-2 col-form-label">Telephone</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="tel" value="081288820099" placeholder="Enter Telephone" id="example-tel-input" />
+                      </div>
+                    </div>
+                    <div class="mb-3 row">
+                      <label for="example-number-input" class="col-md-2 col-form-label">Total Pax</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="number" value="1" placeholder="Enter Number" id="example-number-input" />
+                      </div>
+                    </div>
+                    <!-- <div class="mb-3 row">
+                      <label for="example-datetime-local-input" class="col-md-2 col-form-label">Tanggal and Waktu</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="datetime-local" value="2019-08-19T13:45:00" id="example-datetime-local-input" />
+                      </div>
+                    </div> -->
+
+                    <div class="mb-3 row">
+                      <label for="example-number-input" class="col-md-2 col-form-label">Note</label>
+                      <div class="col-md-10">
+                        <input class="form-control" type="text" placeholder="Catatan" id="example-number-input" />
+                      </div>
+                    </div>
+
+                    <div class="text-end">
+                      <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+            </div>
+
+            <!-- <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Checkboxes</h4>
+
+                    <div class="row">
+                      <div class="col-xl-3 col-sm-6">
+                        <div class="mt-4">
+                          <h5 class="font-size-14 mb-4"><i class="mdi mdi-arrow-right text-primary me-1"></i> Form Checkboxes</h5>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="formCheck1" />
+                            <label class="form-check-label" for="formCheck1"> Form Checkbox </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="formCheck2" checked />
+                            <label class="form-check-label" for="formCheck2"> Form Checkbox checked </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-sm-6">
+                        <div class="mt-4">
+                          <h5 class="font-size-14 mb-4"><i class="mdi mdi-arrow-right text-primary me-1"></i> Form Checkboxes Right</h5>
+                          <div>
+                            <div class="form-check form-check-right mb-3">
+                              <input class="form-check-input" type="checkbox" id="formCheckRight1" />
+                              <label class="form-check-label" for="formCheckRight1"> Form Checkbox Right </label>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="form-check form-check-right">
+                              <input class="form-check-input" type="checkbox" id="formCheckRight2" checked />
+                              <label class="form-check-label" for="formCheckRight2"> Form Checkbox Right checked </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-sm-6">
+                        <div class="mt-4">
+                          <h5 class="font-size-14"><i class="mdi mdi-arrow-right text-primary me-1"></i> Form Checkboxes colors</h5>
+                          <p class="sub-header mb-4">Add class <code>.form-check-* </code> for a color Checkboxes</p>
+
+                          <div>
+                            <div class="form-check form-check-primary mb-3">
+                              <input class="form-check-input" type="checkbox" id="formCheckcolor1" checked />
+                              <label class="form-check-label" for="formCheckcolor1"> Checkbox Primary </label>
+                            </div>
+
+                            <div class="form-check form-check-success mb-3">
+                              <input class="form-check-input" type="checkbox" id="formCheckcolor2" checked />
+                              <label class="form-check-label" for="formCheckcolor2"> Checkbox Success </label>
+                            </div>
+
+                            <div class="form-check form-check-info mb-3">
+                              <input class="form-check-input" type="checkbox" id="formCheckcolor3" checked />
+                              <label class="form-check-label" for="formCheckcolor3"> Checkbox Info </label>
+                            </div>
+
+                            <div class="form-check form-check-warning mb-3">
+                              <input class="form-check-input" type="checkbox" id="formCheckcolor4" checked />
+                              <label class="form-check-label" for="formCheckcolor4"> Checkbox Warning </label>
+                            </div>
+
+                            <div class="form-check form-check-danger">
+                              <input class="form-check-input" type="checkbox" id="formCheckcolor5" checked />
+                              <label class="form-check-label" for="formCheckcolor5"> Checkbox Danger </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-sm-6">
+                        <div class="mt-4">
+                          <h5 class="font-size-14"><i class="mdi mdi-arrow-right text-primary me-1"></i> Form Checkboxes Outline</h5>
+                          <p class="sub-header mb-4">Add class <code>.form-checkbox-outline</code> & <code>.form-check-* </code> for a color Checkboxes</p>
+
+                          <div>
+                            <div class="form-check form-checkbox-outline form-check-primary mb-3">
+                              <input class="form-check-input" type="checkbox" id="customCheckcolor1" checked />
+                              <label class="form-check-label" for="customCheckcolor1"> Checkbox Outline Primary </label>
+                            </div>
+
+                            <div class="form-check form-checkbox-outline form-check-success mb-3">
+                              <input class="form-check-input" type="checkbox" id="customCheckcolor2" checked />
+                              <label class="form-check-label" for="customCheckcolor2"> Checkbox Outline Success </label>
+                            </div>
+
+                            <div class="form-check form-checkbox-outline form-check-info mb-3">
+                              <input class="form-check-input" type="checkbox" id="customCheckcolor3" checked />
+                              <label class="form-check-label" for="customCheckcolor3"> Checkbox Outline Info </label>
+                            </div>
+
+                            <div class="form-check form-checkbox-outline form-check-warning mb-3">
+                              <input class="form-check-input" type="checkbox" id="customCheckcolor4" checked />
+                              <label class="form-check-label" for="customCheckcolor4"> Checkbox Outline Warning </label>
+                            </div>
+
+                            <div class="form-check form-checkbox-outline form-check-danger">
+                              <input class="form-check-input" type="checkbox" id="customCheckcolor5" checked />
+                              <label class="form-check-label" for="customCheckcolor5"> Checkbox Outline Danger </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Radios</h4>
+
+                    <div class="row">
+                      <div class="col-xl-3 col-sm-6">
+                        <div class="mt-4">
+                          <h5 class="font-size-14 mb-4">Form Radios</h5>
+                          <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked />
+                            <label class="form-check-label" for="formRadios1"> Form Radio </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="formRadios" id="formRadios2" />
+                            <label class="form-check-label" for="formRadios2"> Form Radio checked </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-sm-6">
+                        <div class="mt-4">
+                          <h5 class="font-size-14 mb-4">Form Radios Right</h5>
+                          <div>
+                            <div class="form-check form-check-right mb-3">
+                              <input class="form-check-input" type="radio" name="formRadiosRight" id="formRadiosRight1" checked />
+                              <label class="form-check-label" for="formRadiosRight1"> Form Radio Right </label>
+                            </div>
+                          </div>
+
+                          <div>
+                            <div class="form-check form-check-right">
+                              <input class="form-check-input" type="radio" name="formRadiosRight" id="formRadiosRight2" />
+                              <label class="form-check-label" for="formRadiosRight2"> Form Radio Right checked </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-sm-6">
+                        <div class="mt-4">
+                          <h5 class="font-size-14"><i class="mdi mdi-arrow-right text-primary me-1"></i> Form Radio colors</h5>
+                          <p class="sub-header mb-4">Add class <code>.form-radio-* </code> for a color Radios</p>
+
+                          <div>
+                            <div class="form-check form-radio-primary mb-3">
+                              <input class="form-check-input" type="radio" name="formRadioColor1" id="formRadioColor1" checked />
+                              <label class="form-check-label" for="formRadioColor1"> Radio Primary </label>
+                            </div>
+
+                            <div class="form-check form-radio-success mb-3">
+                              <input class="form-check-input" type="radio" name="formRadioColor2" id="formRadioColor2" checked />
+                              <label class="form-check-label" for="formRadioColor2"> Radio Success </label>
+                            </div>
+
+                            <div class="form-check form-radio-info mb-3">
+                              <input class="form-check-input" type="radio" name="formRadioColor3" id="formRadioColor3" checked />
+                              <label class="form-check-label" for="formRadioColor3"> Radio Info </label>
+                            </div>
+
+                            <div class="form-check form-radio-warning mb-3">
+                              <input class="form-check-input" type="radio" name="formRadioColor4" id="formRadioColor4" checked />
+                              <label class="form-check-label" for="formRadioColor4"> Radio warning </label>
+                            </div>
+
+                            <div class="form-check form-radio-danger mb-3">
+                              <input class="form-check-input" type="radio" name="formRadioColor5" id="formRadioColor5" checked />
+                              <label class="form-check-label" for="formRadioColor5"> Radio Danger </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-3 col-sm-6">
+                        <div class="mt-4">
+                          <h5 class="font-size-14"><i class="mdi mdi-arrow-right text-primary me-1"></i> Form Radio Outline</h5>
+                          <p class="sub-header mb-4">Add class <code>form-radio-outline</code> & <code>.form-radio-* </code> for a color Checkboxes</p>
+
+                          <div>
+                            <div class="form-check form-radio-outline form-radio-primary mb-3">
+                              <input class="form-check-input" type="radio" name="formRadio1" id="formRadio1" checked />
+                              <label class="form-check-label" for="formRadio1"> Radio Outline Primary </label>
+                            </div>
+                            <div class="form-check form-radio-outline form-radio-success mb-3">
+                              <input class="form-check-input" type="radio" name="formRadio2" id="formRadio2" checked />
+                              <label class="form-check-label" for="formRadio2"> Radio Outline Success </label>
+                            </div>
+                            <div class="form-check form-radio-outline form-radio-info mb-3">
+                              <input class="form-check-input" type="radio" name="formRadio3" id="formRadio3" checked />
+                              <label class="form-check-label" for="formRadio3"> Radio Outline Info </label>
+                            </div>
+                            <div class="form-check form-radio-outline form-radio-warning mb-3">
+                              <input class="form-check-input" type="radio" name="formRadio4" id="formRadio4" checked />
+                              <label class="form-check-label" for="formRadio4"> Radio Outline Warning </label>
+                            </div>
+                            <div class="form-check form-radio-outline form-radio-danger mb-3">
+                              <input class="form-check-input" type="radio" name="formRadio5" id="formRadio5" checked />
+                              <label class="form-check-label" for="formRadio5"> Radio Outline Danger </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                © DBS.
+              </div>
+              <div class="col-sm-6">
+                <div class="text-sm-end d-none d-sm-block">Design & Develop by DBS Kitchen</div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+      <div data-simplebar class="h-100">
+        <div class="rightbar-title d-flex align-items-center px-3 py-4">
+          <h5 class="m-0 me-2">Settings</h5>
+
+          <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+            <i class="mdi mdi-close noti-icon"></i>
+          </a>
+        </div>
+
+        <!-- Settings -->
+        <hr class="mt-0" />
+        <h6 class="text-center mb-0">Choose Layouts</h6>
+
+        <div class="p-4">
+          <div class="mb-2">
+            <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images" />
+          </div>
+
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked />
+            <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+          </div>
+
+          <div class="mb-2">
+            <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images" />
+          </div>
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" />
+            <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+          </div>
+
+          <div class="mb-2">
+            <img src="assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="layout images" />
+          </div>
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch" />
+            <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+          </div>
+
+          <div class="mb-2">
+            <img src="assets/images/layouts/layout-4.jpg" class="img-thumbnail" alt="layout images" />
+          </div>
+          <div class="form-check form-switch mb-5">
+            <input class="form-check-input theme-choice" type="checkbox" id="dark-rtl-mode-switch" />
+            <label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
+          </div>
+        </div>
+      </div>
+      <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
